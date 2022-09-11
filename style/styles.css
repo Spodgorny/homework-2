@@ -1,0 +1,11 @@
+body {
+    background: #F5F5F5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header-nav li:hover {
+    color: #2196F3;
+}
