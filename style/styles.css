@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background: #F5F5F5;
+    color: rgba(33, 33, 33, 1);
+    background: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -22,10 +22,15 @@ ul, ol {
     font-weight: 500;
     font-size: 14px;
     color: #212121;
-    cursor: pointer;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
 }
 
 .nav-item:hover {
+    color: #2196F3;
+}
+
+.nav-item:focus {
     color: #2196F3;
 }
 
@@ -33,6 +38,8 @@ ul, ol {
     color: #000;
     font-size: 26px;
     font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: .03em;
 }
 
 .weblogo span {
@@ -43,10 +50,15 @@ ul, ol {
 .email {
     font-weight: 500;
     font-size: 14px;
+    line-height: 1.71;
 }
 
 .email:hover {
     color: #2196F3;
+}
+
+.email:focus {
+    color: #188CE8;
 }
 
 .tel {
@@ -55,33 +67,47 @@ ul, ol {
     color: #757575;
 }
 
-h1 {
-    width: 696px;
-    height: 120px;
+.tel:hover {
+    color: #2196F3;
+}
+
+.tel:focus {
+    color: #188CE8;
+}
+
+.title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.3;
+    line-height: 1.36;
     color: #fff;
 }
 
-h2 {
+.nazv {
+    visibility: hidden;
     font-weight: 700;
     font-size: 36px;
-    color: #212121;
+    line-height: 1.16;
+    color: rgba(33, 33, 33, 1);
 }
 
-h3 {
+.important {
     font-weight: 700;
     font-size: 14px;
+    letter-spacing: .03em;
+    line-height: 1.14;
 }
+
 
 p {
     font-size: 14px;
-    color: #757575;
-    width: 270px;
+    font-weight: 400;
+    color: rgba(117, 117, 117, 1);
+    letter-spacing: .03em;
+    line-height: 1.71;
 }
 
 .btn {
+    font-family: inherit;
     color: #fff;
     background: #188CE8;
     font-size: 16px;
@@ -92,19 +118,32 @@ p {
     border: none;
 }
 
+.btn:hover {
+    background: rgba(33, 150, 243, 1);
+    cursor: pointer;
+}
+
+.btn:focus {
+    color: rgba(33, 150, 243, 1);
+}
+
 .sectionone {
     background: #2F303A;
 }
 
 .lastname {
+    font-weight: 500;
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+.color {
+    background: #F5F4FA;
 }
 
 .work {
     font-size: 16px;
     color: #757575;
-    margin: 0px;
 }
 
 .footer {
@@ -119,6 +158,7 @@ p {
     color: rgba(255, 255, 255, 0.6);
     opacity: 60%;
     font-style: normal;
+    line-height: 1.71;
 }
 
 .tel--two {
@@ -127,13 +167,33 @@ p {
     font-style: normal;
 }
 
+.tel--two:hover {
+    color: #2196F3;
+}
+
+.tel--two:focus {
+    color: #188CE8;
+}
+
 .street {
     font-size: 14px;
     color: #fff;
+    font-weight: 400;
     font-style: normal;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+}
+
+.street:hover {
+    color: #2196F3;
+}
+
+.street:focus {
+    color: #188CE8;
 }
 
 .h1two {
+    visibility: hidden;
     color: #000;
 }
 
@@ -141,14 +201,11 @@ p {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.62;
     color: #212121;
-    background: rgb(228 228 231);
     border-radius: 4px;
     border: none;
-    padding: 6px 22px;
-    width: 112px;
-    margin-right: 8px;
+    cursor: pointer;
 }
 
 .sec-menu:hover {
@@ -157,13 +214,20 @@ p {
     border-radius: 4px;
 }
 
+.sec-menu:focus {
+    color: #2196F3;
+}
+
 .project {
     font-weight: 700;
     font-size: 18px;
-    line-height: .2;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .project p {
     font-size: 16px;
     color: #757575;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
 }
