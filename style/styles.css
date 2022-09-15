@@ -1,7 +1,19 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196f3;
+    --bg-section: #2F303A;
+    --color-btn-hover: #188CE8;
+    --container-bg-color: #fff;
+    --container-border-color: #eee;
+    --button-bg-color: #f5f4fa;
+    --logo-main-color: #000;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
-    --black: #212121;
-    --white: #FFFFFF;
+    color: var(--primary-text-color);
 }
 
 * {
@@ -21,21 +33,21 @@ ul, ol {
 .nav-item {
     font-weight: 500;
     font-size: 14px;
-    color: #212121;
+    color: var(--primary-text-color);
     letter-spacing: 0.02em;
     line-height: 1.14;
 }
 
 .nav-item:hover {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .nav-item:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .weblogo {
-    color: #000;
+    color: var(--logo-main-color);
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
@@ -44,55 +56,60 @@ ul, ol {
 
 .weblogo span {
     font-family: 'Raleway', sans-serif;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .email {
+    color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .email:hover {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .email:focus {
-    color: #188CE8;
+    color: var(--accent-color);
 }
 
 .tel {
     font-weight: 500;
     font-size: 14px;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 .tel:hover {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .tel:focus {
-    color: #188CE8;
+    color: var(--accent-color);
 }
 
+
 .title {
+    text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    color: #fff;
+    color: var(--container-bg-color);
 }
 
 .nazv {
-    visibility: hidden;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    color: rgba(33, 33, 33, 1);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 
 .important {
     font-weight: 700;
     font-size: 14px;
+    text-transform: uppercase;
     letter-spacing: .03em;
     line-height: 1.14;
 }
@@ -101,15 +118,15 @@ ul, ol {
 p {
     font-size: 14px;
     font-weight: 400;
-    color: rgba(117, 117, 117, 1);
+    color: var(--secondary-text-color);
     letter-spacing: .03em;
-    line-height: 1.71;
+    line-height: 1.87;
 }
 
 .btn {
     font-family: inherit;
-    color: #fff;
-    background: #188CE8;
+    color: var(--container-bg-color);
+    background: var(--accent-color);
     font-size: 16px;
     font-weight: 700;
     border-radius: 4px;
@@ -119,65 +136,68 @@ p {
 }
 
 .btn:hover {
-    background: rgba(33, 150, 243, 1);
+    background: var(--color-btn-hover);
     cursor: pointer;
 }
 
 .btn:focus {
-    color: rgba(33, 150, 243, 1);
+    color: var(--container-bg-color);
 }
 
 .sectionone {
-    background: #2F303A;
+    background: var(--bg-section);
 }
 
 .lastname {
-    font-weight: 500;
     font-size: 16px;
-    margin-bottom: 10px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
 }
 
 .color {
-    background: #F5F4FA;
+    background: var(--button-bg-color);
+}
+
+.cooloor {
+    background-color: var(--logo-main-color);
 }
 
 .work {
     font-size: 16px;
-    color: #757575;
+    color: var(--secondary-text-color); 
 }
 
 .footer {
-    background: #2F303A;
+    background: var(--bg-section);
 }
 
 .weblogo--sm {
-    color: #fff;
+    color: var(--container-bg-color);
 }
 
 .email--two {
-    color: rgba(255, 255, 255, 0.6);
-    opacity: 60%;
+    color: var(--secondary-text-color);
     font-style: normal;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .tel--two {
-    color: rgba(255, 255, 255, 0.6);
-    opacity: 60%;
     font-style: normal;
+    font-size: 14px;
 }
 
 .tel--two:hover {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .tel--two:focus {
-    color: #188CE8;
+    color: var(--accent-color);
 }
 
 .street {
     font-size: 14px;
-    color: #fff;
+    color: var(--container-bg-color);
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.03em;
@@ -185,37 +205,47 @@ p {
 }
 
 .street:hover {
-    color: #2196F3;
+    color: var(--color-btn-hover);
 }
 
 .street:focus {
-    color: #188CE8;
+    color: var(--color-btn-hover);
 }
 
-.h1two {
-    visibility: hidden;
-    color: #000;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .sec-menu {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
-    color: #212121;
+    color: var( --primary-text-color);
     border-radius: 4px;
-    border: none;
+    border-color: transparent;
     cursor: pointer;
 }
 
 .sec-menu:hover {
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    color: var(--container-bg-color);
 }
 
 .sec-menu:focus {
-    color: #2196F3;
+    background-color: var(--accent-color);
+    color: var(--container-bg-color);
 }
 
 .project {
@@ -223,11 +253,12 @@ p {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--primary-text-color);
 }
 
 .project p {
     font-size: 16px;
-    color: #757575;
+    color: var(--secondary-text-color);
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
