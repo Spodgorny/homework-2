@@ -45,8 +45,8 @@ ul, ol {
 }
 
 
-.header.nav-item:active {
-    color: red;
+.nav-item.current {
+    color: var(--color-btn-hover);
 }
 
 .nav-item:focus {
@@ -116,6 +116,7 @@ ul, ol {
 .partner {
     background-color: var(--button-bg-color);
 }
+
 
 .important {
     font-weight: 700;
