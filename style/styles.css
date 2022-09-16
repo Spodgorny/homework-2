@@ -54,6 +54,7 @@ ul, ol {
 }
 
 .weblogo {
+    font-family: 'Raleway', sans-serif;
     color: var(--logo-main-color);
     font-size: 26px;
     font-weight: 700;
@@ -62,7 +63,6 @@ ul, ol {
 }
 
 .weblogo span {
-    font-family: 'Raleway', sans-serif;
     color: var(--accent-color);
 }
 
@@ -103,6 +103,7 @@ ul, ol {
     font-size: 44px;
     line-height: 1.36;
     color: var(--container-bg-color);
+    letter-spacing: 0.06em;
 }
 
 .nazv {
@@ -127,16 +128,18 @@ ul, ol {
 }
 
 
-p {
+.import-text {
     font-size: 14px;
-    font-weight: 400;
     color: var(--secondary-text-color);
     letter-spacing: .03em;
-    line-height: 1.87;
+    line-height: 1.71;
 }
 
 .stylep {
     font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: .03em;
+    color: var(--secondary-text-color);
 }
 
 .btn {
@@ -149,6 +152,7 @@ p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 32px;
     border: none;
+    letter-spacing: 0.06em;
 }
 
 .btn:hover {
@@ -157,7 +161,7 @@ p {
 }
 
 .btn:focus {
-    color: var(--container-bg-color);
+    color: var(--bg-section);
 }
 
 .sectionone {
@@ -174,13 +178,15 @@ p {
     background: var(--button-bg-color);
 }
 
-.cooloor {
-    background-color: var(--logo-main-color);
+.bg-licolor {
+    background: var(--container-bg-color);
 }
+
 
 .work {
     font-size: 16px;
-    color: var(--secondary-text-color); 
+    color: var(--secondary-text-color);
+    line-height: 1.18;
 }
 
 .footer {
@@ -188,11 +194,16 @@ p {
 }
 
 .weblogo--sm {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: .03em;
     color: var(--container-bg-color);
 }
 
 .email--two {
-    color: var(--secondary-text-color);
+    color:rgba(255, 255, 255, 0.6);
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -214,7 +225,6 @@ p {
 .street {
     font-size: 14px;
     color: var(--container-bg-color);
-    font-weight: 400;
     font-style: normal;
     letter-spacing: 0.03em;
     line-height: 1.71;
