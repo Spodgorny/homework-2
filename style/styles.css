@@ -147,7 +147,8 @@ ul, ol {
     color: var(--container-bg-color);
     background: var(--accent-color);
     font-size: 16px;
-    font-weight: 700;
+    border-color: transparent;
+    font-weight: 500;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 32px;
@@ -257,9 +258,11 @@ ul, ol {
     font-weight: 500;
     line-height: 1.62;
     color: var( --primary-text-color);
+    background-color: var(--button-bg-color);
     border-radius: 4px;
     border-color: transparent;
     cursor: pointer;
+    letter-spacing: .03em;
 }
 
 .sec-menu:hover {
